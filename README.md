@@ -42,11 +42,3 @@ The program is primarily written in NASM Assembly, such as the win conditions an
 ## Dependencies
 
 - The program uses the `<iostream>` and `<limits>` headers for user input, output, and error handling.
-
-```bash
-g++ customttt.cpp -o customttt
-```
-
-## License
-
-This program is provided under the [MIT License](LICENSE). Feel free to modify and distribute it as needed.
