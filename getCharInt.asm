@@ -5,7 +5,7 @@
 ; For CS 301 Fall 2023
 ; Source Code for the getCharInt function to be called by the getChar function from customttt.cpp
 ; Grabs the int of an indexed char
-; Used to be converted back to a char for use in the main C++ file
+; Used for the getChar function in the customttt.cpp main C++ code
 
 BITS 64
 
