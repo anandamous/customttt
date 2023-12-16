@@ -42,3 +42,24 @@ The program is primarily written in NASM Assembly, such as the win conditions an
 ## Dependencies
 
 - The program uses the `<iostream>` and `<limits>` headers for user input, output, and error handling.
+
+## Compiling
+
+- This program only works on Windows as the registers used within the Assembly code are based on Windows registers, not Linux
+- Compile using g++ and NASM Assembly with the following commands:
+```
+nasm -f win64 buildBoard.asm -o buildBoard.obj 
+nasm -f win64 checkHorizontalO.asm -o checkHorizontalO.obj 
+nasm -f win64 checkHorizontalX.asm -o checkHorizontalX.obj 
+nasm -f win64 checkLeftDiagonalO.asm -o checkLeftDiagonalO.obj 
+nasm -f win64 checkLeftDiagonalX.asm -o checkLeftDiagonalX.obj 
+nasm -f win64 checkRightDiagonalX.asm -o checkRightDiagonalX.obj 
+nasm -f win64 checkRightDiagonalO.asm -o checkRightDiagonalO.obj 
+nasm -f win64 checkVerticallyO.asm -o checkVerticallyO.obj 
+nasm -f win64 checkVerticallyX.asm -o checkVerticallyX.obj 
+nasm -f win64 getCharInt.asm -o getCharInt.obj 
+nasm -f win64 modifyChar.asm -o modifyChar.obj 
+nasm -f win64 noWinner.asm -o noWinner.obj 
+nasm -f win64 printBoard.asm -o printBoard.obj 
+g++ -m64 -o test customttt.cpp buildBoard.obj getCharInt.obj modifyChar.obj printBoard.obj noWinner.obj checkHorizontalX.obj checkHorizontalO.obj checkVerticallyX.obj checkVerticallyO.obj checkLeftDiagonalX.obj checkLeftDiagonalO.obj checkRightDiagonalX.obj checkRightDiagonalO.obj
+```
