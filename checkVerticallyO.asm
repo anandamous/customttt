@@ -30,7 +30,7 @@ outer_loop_start:
     ; // for(int j = 0; j < BOARD_SIZE; j++) { - INNER LOOP START
     mov r9, 0 ; j = 0
     inner_loop_start:
-        ; // if(board[i][j] == 'X') { - CHECK IF X START
+        ; // if(board[i][j] == 'X') { - CHECK IF O START
         ; calculate the correct spot to index
         ; r10 is the register of the calculated index
         mov r10, r9
@@ -44,7 +44,7 @@ outer_loop_start:
         jne skip
         add r11, 1 ; countAllGone++
         skip: 
-        ; // } - CHECK IF X END
+        ; // } - CHECK IF O END
 
         add r9, 1 ; j++
         cmp r9, rdx ; j < BOARD_SIZE
