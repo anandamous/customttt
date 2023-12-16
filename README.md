@@ -63,3 +63,7 @@ nasm -f win64 noWinner.asm -o noWinner.obj
 nasm -f win64 printBoard.asm -o printBoard.obj 
 g++ -m64 -o test customttt.cpp buildBoard.obj getCharInt.obj modifyChar.obj printBoard.obj noWinner.obj checkHorizontalX.obj checkHorizontalO.obj checkVerticallyX.obj checkVerticallyO.obj checkLeftDiagonalX.obj checkLeftDiagonalO.obj checkRightDiagonalX.obj checkRightDiagonalO.obj
 ```
+
+## Technical Blog Post
+
+- For the technical details behind the project, please visit the [technical blog post](https://docs.google.com/document/d/e/2PACX-1vRgYCHm83TKdUySzTS2NZ_KQVkMDnUh-pEXwY75PAkXExO_6ErXzV4S4F68tEUM-4d8cyrelt406BEN/pub).
