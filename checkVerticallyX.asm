@@ -14,7 +14,6 @@ BITS 64
 section .data
     xWonString db `PLAYER X HAS WON!\n`,0 ; Null-terminated string
     format db "%s", 0  ; Format string for printf
-    testNum db "NUM: %d... ", 0
 
 section .text
     global checkVerticallyX:
